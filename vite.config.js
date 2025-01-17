@@ -7,7 +7,6 @@ import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
   return {
-    base: 'Castle_Craft',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
