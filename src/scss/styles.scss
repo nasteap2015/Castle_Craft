@@ -1,4 +1,5 @@
 @import 'header.scss';
+@import 'about.scss';
 @import 'gallery.scss';
 @import 'how-to-play.scss';
 
@@ -34,6 +35,10 @@
   line-height: 1.2;
   font-weight: 600;
   color: $_title_color;
+
+  @include media(desktop) {
+    font-size: 40px;
+  }
 }
 
 .pretitle {
@@ -45,4 +50,8 @@
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 3px;
+
+  @include media(desktop) {
+    font-size: 14px;
+  }
 }
