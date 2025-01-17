@@ -1,0 +1,85 @@
+.container.how_to_play {
+  background-color: #357a2f;
+  padding: 48px 16px 40px;
+  @include media(desktop) {
+    padding: 80px;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pretitle.how_to_play {
+  background-color: #d5b89540;
+  margin-bottom: 16px;
+}
+
+.title.how_to_play {
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.how_to_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media(desktop) {
+    gap: 20px;
+  }
+}
+
+.how_to_list_item {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 78px;
+    align-items: center;
+  }
+}
+
+.how_to_list_item:nth-child(even) {
+  @include media(desktop) {
+    flex-direction: row-reverse;
+  }
+}
+
+.how_to_list_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @include media(desktop) {
+    gap: 16px;
+  }
+}
+
+.how_to_list_title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  text-transform: capitalize;
+}
+
+.how_to_text {
+  line-height: 1.2;
+  line-height: -0.2px;
+}
+
+.img_container {
+  width: 288px;
+  height: 162px;
+  border-radius: 16px;
+  overflow: hidden;
+  @include media(desktop) {
+    width: 508px;
+    height: 286px;
+  }
+}
+
+.how_to_img {
+  object-fit: cover;
+}
