@@ -17,9 +17,13 @@
 .container {
   width: 320px;
   overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
 
   @include media(desktop) {
     width: 1200px;
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }
 
