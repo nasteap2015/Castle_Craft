@@ -1,0 +1,144 @@
+.benefits-section {
+  width: 320px;
+  background: linear-gradient(180deg, #41a23a 0%, #286823 74.1%, #183c15 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  align-items: center;
+
+  @include media(desktop) {
+    width: 1200px;
+  }
+}
+
+.benefits-title {
+  margin-top: 16px;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}
+
+.benefits-item {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  padding: 24px 31px;
+  backdrop-filter: blur(17.405092239379883px);
+  box-shadow: inset 0 0 40px 0 rgba(255, 255, 255, 0.12),
+    2px 4px 28px 0 rgba(64, 100, 62, 0.09);
+  background: rgba(255, 255, 255, 0.09);
+}
+
+.item-top {
+    @include media(desktop) {
+    width: 508px;
+  }
+}
+
+.item-bt {
+    @include media(desktop) {
+    width: 331px;
+  }
+}
+
+.item-last {
+    @include media(desktop) {
+    width: 330px;
+  }
+}
+
+.benefit-img {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    margin-bottom: 24px;
+  }
+}
+
+.benefit-subtitle {
+  font-family: 'Manrope', serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 123%;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.benefit-descr {
+  font-family: 'Manrope', serif;
+  font-size: 14px;
+  line-height: 160%;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.blue-diamond-img {
+  width: 44px;
+
+  @include media(desktop) {
+    width: 56px;
+    height: 57px;
+  }
+}
+
+.steel-img {
+  width: 23px;
+
+  @include media(desktop) {
+    width: 56px;
+    height: 59px;
+  }
+}
+
+.potion-img {
+  width: 31px;
+
+  @include media(desktop) {
+    width: 56px;
+    height: 57px;
+  }
+}
+
+.heart-img {
+  width: 42px;
+
+  @include media(desktop) {
+    width: 56px;
+    height: 54px;
+  }
+}
+
+.star-img {
+  width: 42px;
+
+  @include media(desktop) {
+    width: 56px;
+    height: 57px;
+  }
+}
