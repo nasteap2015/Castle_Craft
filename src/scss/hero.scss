@@ -1,0 +1,124 @@
+.hero-section {
+    width: 320px;
+  background-image: linear-gradient(
+      90deg,
+      #112f44 0%,
+      rgba(18, 33, 61, 0.55) 25%,
+      rgba(19, 35, 53, 0) 56%
+    ),
+    url('../img/hero/hero-bg-mob.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 530px;
+  padding-top: 149px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+
+  @include media(desktop) {
+    width: 1200px;
+    background-image: linear-gradient(
+        90deg,
+        #112f44 0%,
+        rgba(18, 33, 61, 0.55) 25%,
+        rgba(19, 35, 53, 0) 56%
+      ),
+      url('../img/hero/hero-bg-desk.png');
+    background-size: auto 727px;
+    padding-top: 162px;
+    padding-bottom: 232px;
+  }
+}
+
+.hero-wrapper {
+  @include media(desktop) {
+    width: 506px;
+  }
+}
+
+.hero-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 72px;
+  }
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 32px;
+
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.play-btn {
+    display: flex;
+  border-radius: 8px;
+  padding: 16px 32px;
+  width: 287px;
+  height: 59px;
+  box-shadow: 0 0 36px 2px rgba(255, 255, 255, 0.25);
+  background: $_button_color;
+  font: inherit;
+  color: inherit;
+  border: none;
+  transition: 0.25s ease-in-out;
+  justify-content: center;
+}
+
+.play-btn:focus,
+.play-btn:hover {
+  box-shadow: 4px 4px 36px 2px rgba(255, 255, 255, 0.55);
+  background: #e76c2d;
+}
+
+.watch-btn {
+  display: flex;
+  gap: 4.5px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 16px 32px 16px 18px;
+  width: 287px;
+  height: 59px;
+  backdrop-filter: blur(8.899999618530273px);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  font: inherit;
+  color: inherit;
+  transition: 0.25s ease-in-out;
+
+  @include media(desktop) {
+    width: 195px;
+    height: 59px;
+  }
+}
+
+.watch-btn:hover, 
+.watch-btn:focus {
+    box-shadow: 4px 4px 36px 2px rgba(255, 255, 255, 0.55);
+background: rgba(255, 255, 255, 0.2);
+}
+
+
+.watch-btn .play-img {
+  width: 18px;
+  height: 18px;
+}
