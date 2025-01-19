@@ -1,0 +1,83 @@
+.why_us {
+  background: linear-gradient(180deg, #357a2f, #4cb962, #033e0f);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.diamond_img {
+  max-width: 48px;
+  max-height: 65px;
+  @include media(desktop) {
+    max-width: 74px;
+    max-height: 100px;
+  }
+}
+
+.why_us_list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media(desktop) {
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+.why_us_item {
+  width: 100%;
+  background: linear-gradient(36.37deg, #00bb77 21.17%, #00a54d 101.32%);
+  border-radius: 16px;
+  padding: 16px 24px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-image-source: linear-gradient(
+    131.23deg,
+    rgba(232, 251, 255, 0.02) 0.86%,
+    rgba(232, 251, 255, 0.14) 50.43%,
+    rgba(232, 252, 255, 0.02) 100%
+  );
+}
+
+.why_us_item:nth-child(-n + 3) {
+  @include media(desktop) {
+    width: 330.67px;
+  }
+}
+
+.why_us_item:nth-last-child(-n + 2) {
+  @include media(desktop) {
+    width: 508px;
+  }
+}
+
+.why_us_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.why_us_item_number {
+  font-family: 'Manrope', serif;
+  font-size: 32px;
+  line-height: 1.32;
+  color: #ffffff59;
+}
+
+.why_us_item_title {
+  font-size: 20px;
+  line-height: 1.23;
+  color: #fdfeff;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.why_us_item_text {
+  font-family: 'Manrope', serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
