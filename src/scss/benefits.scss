@@ -1,13 +1,9 @@
 .benefits-section {
-  width: 320px;
-  background: linear-gradient(180deg, #41a23a 0%, #286823 74.1%, #183c15 100%);
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #42a23a 0%, #3d9836 100%);
   padding-top: 80px;
-  padding-bottom: 80px;
   align-items: center;
-
-  @include media(desktop) {
-    width: 1200px;
-  }
 }
 
 .benefits-title {
@@ -50,19 +46,19 @@
 }
 
 .item-top {
-    @include media(desktop) {
+  @include media(desktop) {
     width: 508px;
   }
 }
 
 .item-bt {
-    @include media(desktop) {
+  @include media(desktop) {
     width: 331px;
   }
 }
 
 .item-last {
-    @include media(desktop) {
+  @include media(desktop) {
     width: 330px;
   }
 }
