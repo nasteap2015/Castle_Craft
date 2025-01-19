@@ -13,13 +13,6 @@
   background-color: #d5b89540;
 }
 
-.title.title_how_to_play {
-  margin-bottom: 24px;
-  @include media(desktop) {
-    margin-bottom: 48px;
-  }
-}
-
 .how_to_list {
   display: flex;
   flex-direction: column;

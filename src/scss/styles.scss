@@ -5,6 +5,7 @@
 @import 'features.scss';
 @import 'gallery.scss';
 @import 'how-to-play.scss';
+@import 'why-us.scss';
 
 :root {
   font-family: 'Poppins', serif;
@@ -38,7 +39,7 @@
   line-height: 1.2;
   font-weight: 600;
   color: $_title_color;
-
+  text-align: center;
   @include media(desktop) {
     font-size: 40px;
   }
@@ -59,8 +60,18 @@
   }
 }
 
+.title_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  @include media(desktop) {
+    margin-bottom: 48px;
+  }
+}
+
 .is-open {
   transform: translate(0);
 }
-
 
