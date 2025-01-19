@@ -1,12 +1,12 @@
 .about-section {
-    width: 320px;
+  display: flex;
+  justify-content: center;
   position: relative;
   background: linear-gradient(84deg, #49a3f8 0%, #2b6092 100%);
   padding-top: 80px;
   padding-bottom: 33px;
 
   @include media(desktop) {
-    width: 1200px;
     padding-top: 139px;
     padding-bottom: 138px;
   }

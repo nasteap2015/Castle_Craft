@@ -5,9 +5,6 @@
   left: 0;
   z-index: 999;
   background-color: $_header_bg_color;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(8.899999618530273px);
-  background: rgba(255, 255, 255, 0.2);
   display: flex;
   padding: 8px 0;
   align-items: center;
@@ -15,9 +12,8 @@
 
   @include media(desktop) {
     gap: 81px;
-    padding: 16px 0;
+    padding: 8px 0;
   }
-  // justify-content: space-between;
 }
 
 .header-wrapper {
@@ -28,8 +24,12 @@
 }
 
 .logo-img {
-  width: 62px;
+  // width: 62px;
   height: 36px;
+
+  @include media(desktop) {
+    height: 56px;
+  }
 }
 
 .header-nav {
@@ -63,7 +63,7 @@
 .nav-link:focus {
   // text-decoration: underline;
   color: $_header_accent_color;
-  // font-weight: 600;
+  font-weight: 600;
   transform: scale(1.1);
 }
 
@@ -151,7 +151,7 @@ text-shadow: 1px 2px 4px 0 #2a7db4;
   background: $_header_bg_color;
 
   @include media(desktop) {
-    height: 68px;
+    height: 72px;
     width: 1200px;
   }
 }
