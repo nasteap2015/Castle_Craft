@@ -1,5 +1,8 @@
 @import 'header.scss';
+@import 'hero.scss';
 @import 'about.scss';
+@import 'benefits.scss';
+@import 'features.scss';
 @import 'gallery.scss';
 @import 'how-to-play.scss';
 @import 'why-us.scss';
@@ -67,3 +70,8 @@
     margin-bottom: 48px;
   }
 }
+
+.is-open {
+  transform: translate(0);
+}
+
