@@ -1,12 +1,12 @@
-.container.gallery {
+.gallery {
   box-sizing: border-box;
   background-color: rgba(73, 163, 248, 1);
-  padding: 40px 16px 40px;
+  padding: 40px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   @include media(desktop) {
-    padding: 80px;
+    padding: 80px 0px;
   }
 }
 
@@ -25,7 +25,7 @@
   }
 }
 
-.text.gallery {
+.text_gallery {
   @include media(desktop) {
     width: 361px;
   }
@@ -38,7 +38,7 @@
   gap: 16px;
 }
 
-.pretitle.gallery {
+.pretitle.pretitle_gallery {
   background-color: rgba(213, 184, 149, 0.25);
 }
 
