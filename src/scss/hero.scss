@@ -1,7 +1,12 @@
 .hero-section {
-    width: 320px;
-    height: 583px;
-  background-image: linear-gradient(90deg, #112f44 9.88%, rgba(18, 33, 61, 0.55) 59.91%, rgba(19, 35, 53, 0) 91.69%),
+  width: 320px;
+  height: 583px;
+  background-image: linear-gradient(
+      90deg,
+      #112f44 9.88%,
+      rgba(18, 33, 61, 0.55) 59.91%,
+      rgba(19, 35, 53, 0) 91.69%
+    ),
     url('../img/hero/hero-bg-mob.png');
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -14,7 +19,12 @@
   @include media(desktop) {
     width: 1200px;
     height: 799px;
-    background-image: linear-gradient(90deg, #112f44 0%, rgba(18, 33, 61, 0.55) 39.72%, rgba(19, 35, 53, 0) 61.94%),
+    background-image: linear-gradient(
+        90deg,
+        #112f44 0%,
+        rgba(18, 33, 61, 0.55) 39.72%,
+        rgba(19, 35, 53, 0) 61.94%
+      ),
       url('../img/hero/hero-bg-desk.png');
     background-size: auto 727px;
     padding-top: 162px;
@@ -62,7 +72,7 @@
 }
 
 .play-btn {
-    display: flex;
+  display: flex;
   border-radius: 8px;
   padding: 16px 32px;
   width: 287px;
@@ -80,6 +90,11 @@
 .play-btn:hover {
   box-shadow: 4px 4px 36px 2px rgba(255, 255, 255, 0.55);
   background: #e76c2d;
+}
+
+.play-btn:active {
+  box-shadow: 0 0 36px 2px rgba(255, 255, 255, 0.25);
+  background: #c44f14;
 }
 
 .watch-btn {
@@ -104,12 +119,16 @@
   }
 }
 
-.watch-btn:hover, 
+.watch-btn:hover,
 .watch-btn:focus {
-    box-shadow: 4px 4px 36px 2px rgba(255, 255, 255, 0.55);
-background: rgba(255, 255, 255, 0.2);
+  box-shadow: 4px 4px 36px 2px rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.2);
 }
 
+.watch-btn:active {
+  backdrop-filter: blur(8.899999618530273px);
+  background: rgba(255, 255, 255, 0.8);
+}
 
 .watch-btn .play-img {
   width: 18px;

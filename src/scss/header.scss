@@ -1,7 +1,5 @@
 .header {
   position: fixed;
-  // top: 0;
-  // left: 0;
   z-index: 999;
   background-color: $_header_bg_color;
   display: flex;
@@ -19,7 +17,6 @@
   display: flex;
   position: fixed;
   z-index: 999;
-  
 }
 
 .logo-img {
@@ -59,7 +56,6 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  // text-decoration: underline;
   color: $_header_accent_color;
   font-weight: 600;
   transform: scale(1.1);
@@ -86,7 +82,12 @@
   overflow: auto;
   -ms-overflow-style: none;
   scrollbar-width: none;
-background: linear-gradient(46deg, #49a3f8 0%, #2b6092 100%);
+  background: linear-gradient(46deg, #49a3f8 0%, #2b6092 100%);
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
 }
 
 .backdrop-menu {
@@ -95,15 +96,14 @@ background: linear-gradient(46deg, #49a3f8 0%, #2b6092 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-around;
-  
 }
 
 .close-btn {
   position: absolute;
   top: 16px;
-  right: 0px;
+  right: 24px;
   border: none;
+  padding: 0;
   background-color: transparent;
   color: $_main_color;
 }
@@ -120,22 +120,20 @@ background: linear-gradient(46deg, #49a3f8 0%, #2b6092 100%);
 
 .mob-nav-item {
   padding: 8px;
-  
 }
 
 .mob-nav-link {
-font-weight: 500;
-font-size: 18px;
-line-height: 150%;
-text-align: center;
-color: $_main_color;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: $_main_color;
 
-text-shadow: 1px 2px 4px 0 #2a7db4;
+  text-shadow: 1px 2px 4px 0 #2a7db4;
 }
 
 .mob-nav-link:hover,
 .mob-nav-link:focus {
-  // text-decoration: underline;
   color: $_header_accent_color;
 }
 
