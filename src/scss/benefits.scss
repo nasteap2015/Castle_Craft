@@ -3,6 +3,7 @@
   justify-content: center;
   background: linear-gradient(180deg, #42a23a 0%, #3d9836 100%);
   padding-top: 80px;
+  // padding-bottom: 1px;
   align-items: center;
 }
 
@@ -72,7 +73,7 @@
 }
 
 .benefit-subtitle {
-  font-family: 'Manrope', serif;
+  font-family: 'Manrope', sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 123%;
@@ -85,7 +86,7 @@
 }
 
 .benefit-descr {
-  font-family: 'Manrope', serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 14px;
   line-height: 160%;
 
