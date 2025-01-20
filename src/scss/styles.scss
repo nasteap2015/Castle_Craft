@@ -21,6 +21,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $_header_bg_color;
+}
+
 .container {
   width: 320px;
   overflow: hidden;
@@ -73,6 +80,14 @@
 
 .is-open {
   transform: translate(0);
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 
