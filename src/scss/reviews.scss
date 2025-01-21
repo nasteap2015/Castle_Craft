@@ -25,14 +25,14 @@
   width: 288px;
   height: 262px;
   box-sizing: border-box;
-  background-color: #F2F2F2;
+  background-color: $_header_bg_color;
   border-radius: 17.2px;
   padding: 16px 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
   align-items: start;
-  color: #292929;
+  color: $_header_color;
   @include media(desktop) {
     width: 331px;
     height: 316px;
@@ -81,7 +81,7 @@
 }
 
 .review_text{
-  color: #00000080;
+  color: $_reviews_main_color;
 }
 
 .review_autor_container{
