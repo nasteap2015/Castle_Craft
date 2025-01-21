@@ -1,0 +1,36 @@
+.footer{
+  background: linear-gradient(318.3deg, #00A6FF -46.81%, #0B6196 145.9%);
+  padding: 22px 0 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  @include media(desktop){
+    padding: 50px 0 49px;
+    font-size: 16px;
+  }
+}
+
+.footer_container{
+  position: relative;
+}
+
+.links_container{
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
+  @include media(desktop){
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+}
+
+.footer_text{
+  font-size: 12px;
+  text-align: center;
+  @include media(desktop){
+    position: absolute;
+    top: 0;
+    left: 452px;
+    font-size: 14px;
+  }
+}
