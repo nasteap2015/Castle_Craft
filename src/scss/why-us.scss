@@ -1,5 +1,6 @@
 .why_us {
-  background: linear-gradient(180deg, #357a2f, #4cb962, #033e0f);
+  background: url(../img/why-us/backdrop.png), linear-gradient(180deg, #006915 0%, #005112 100%);
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;

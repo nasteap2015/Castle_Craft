@@ -6,6 +6,7 @@
 @import 'gallery.scss';
 @import 'how-to-play.scss';
 @import 'why-us.scss';
+@import 'reviews.scss';
 
 :root {
   font-family: 'Poppins', serif;
@@ -54,6 +55,7 @@ body {
 
 .pretitle {
   border: 1px solid rgba(255, 149, 0, 1);
+  background: #D5B89540;
   border-radius: 8px;
   text-transform: uppercase;
   padding: 8px 16px;
