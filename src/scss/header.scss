@@ -61,6 +61,11 @@
   transform: scale(1.1);
 }
 
+.nav-link.active {
+  color: $_header_accent_color;
+  font-weight: 600;
+}
+
 .burger-menu {
   border: none;
   background-color: transparent;

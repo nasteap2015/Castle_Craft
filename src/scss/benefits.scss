@@ -5,6 +5,10 @@
   padding-top: 80px;
   // padding-bottom: 1px;
   align-items: center;
+
+  @include media(desktop) {
+    padding-bottom: 80px;
+  }
 }
 
 .benefits-title {
