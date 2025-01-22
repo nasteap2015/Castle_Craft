@@ -12,6 +12,9 @@
   width: 100%;
   padding: 40px 0;
   @include media(desktop) {
+      background: url(../img/why_us/backdrop_desktop.png);
+      background-size: 100% 102%;
+      background-repeat: no-repeat;
       padding: 80px 0;
     }
 }
