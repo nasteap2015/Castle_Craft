@@ -43,6 +43,9 @@ body {
 
 .logo_img {
   height: 36px;
+  @include media(desktop) {
+      height: 56px;
+    }
 }
 
 .arrow_img {
