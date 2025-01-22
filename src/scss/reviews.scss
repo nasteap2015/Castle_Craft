@@ -1,27 +1,28 @@
 .reviews{
   background: linear-gradient(180deg, #1F4F1C, #193D16);
-  padding: 40px 0;
+  padding: 40px 0 48px;
 
   @include media(desktop){
     padding: 80px 0;
   }
 }
 
-.swiper.reviews_swiper{
+.swiper_reviews{
+  overflow: hidden;
   height: 294px;
   @include media(desktop){
     height: 407px;
   }
 }
 
-.swiper-wrapper.reviews_wrapper{
+.swiper_reviews .swiper-wrapper{
   height: 262px;
   @include media(desktop){
     height: 351px;
   }
 }
 
-.swiper-slide.reviews_slide{
+.swiper_reviews .swiper-slide{
   width: 288px;
   height: 262px;
   box-sizing: border-box;
@@ -40,7 +41,7 @@
   }
 }
 
-.reviews_slide.swiper-slide-active{
+.swiper_reviews .swiper-slide.swiper-slide-active{
   @include media(desktop) {
       width: 330px;
       height: 351px;
@@ -107,14 +108,19 @@
   }
 }
 
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal{
-  bottom: var(--swiper-pagination-bottom, 0px);
+.swiper_reviews .swiper-pagination {
+  position: relative !important;
+  margin-top: 22px;
+  @include media(desktop){
+    margin-top: 42px;
+  }
+
 }
 
-.swiper-pagination-bullet{
+.swiper_reviews .swiper-pagination-bullet {
   background: #FFFFFF4D !important;
 }
 
-.swiper-pagination-bullet-active{
+.swiper_reviews .swiper-pagination-bullet-active {
   background: #FFFFFF !important;
 }
